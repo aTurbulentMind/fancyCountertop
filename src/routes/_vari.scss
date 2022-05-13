@@ -1,0 +1,45 @@
+//colors
+
+$textColorMain: #fdfdfa;
+$backgroundMain:#030702;
+$backgroundSecond:#0e220c;
+$backgroundThird: #022b01;
+$extra:#f7c72b;
+$highlight:#239e18;
+$Glow:#58f649;
+$gradient:linear-gradient(90deg, rgb(3, 8, 5) 0%, rgb(6, 15, 7) 35%, rgb(11, 26, 10) 100%);
+
+
+$transitSpeed: 0.3s;
+
+//font stack
+$mainFont: 'Playfair Display',
+serif;
+$secondaryFont: 'Playfair Display',
+serif;
+
+
+
+// mixins
+
+@mixin glassBack() {
+    background: #12770525;
+    box-shadow: 0 3px 12px 3px $backgroundThird;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    border: 1px solid #0c721463;
+}
+
+
+
+// set txt color
+//@function set-text-color($color) {
+//    @if(lightness($color) > 70) {
+//        @return #333;
+//    }
+//
+//    @else {
+//        @return $textColorMain;
+//    }
+//}
